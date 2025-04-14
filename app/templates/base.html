@@ -19,7 +19,7 @@
                         </svg>
                     </button>
                 </div>
-                
+
                 <nav id="mobileMenu" class="mobile-menu menu-closed md:flex md:items-center mt-4 md:mt-0 md:space-x-4 space-y-2 md:space-y-0">
                     <a href="{{ url_for('inicio') }}" class="block md:inline-block hover:bg-blue-700 hover:text-white px-2 py-2 rounded">Inicio</a>
                     <a href="{{ url_for('ver_cursos') }}" class="block md:inline-block hover:bg-blue-700 hover:text-white px-2 py-2 rounded">Cursos</a>
@@ -33,24 +33,24 @@
             </div>
         </div>
     </header>
-    
+
     <main class="container mx-auto px-4 py-6">
         {% block contenido %}{% endblock %}
     </main>
-    
+
     <footer class="bg-white-600 text-black py-6 shadow-top">
         <div class="container mx-auto px-6 text-center">
             <p>&copy; 2025 NovaServiTec. Todos los derechos reservados.</p>
-            <p>Autor: <cite>Gunar Castro Iñigo</cite></p>
+            <p>Autor: <cite>espartanos</cite></p>
         </div>
     </footer>
-    
+
     <script>
     // Script para el menú móvil
     document.addEventListener('DOMContentLoaded', function() {
         const menuBtn = document.getElementById('menuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
-        
+
         if (menuBtn && mobileMenu) {
             menuBtn.addEventListener('click', function() {
                 mobileMenu.classList.toggle('menu-closed');
